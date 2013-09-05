@@ -23,7 +23,25 @@ public class MainActivity extends Activity {
         addListenerOnButton();
     }
 
-
+    public void addListenerOnButton() {
+    	 
+		final Context context = this;
+ 
+		button = (Button) findViewById(R.id.button1);
+ 
+		button.setOnClickListener(new OnClickListener() {
+ 
+			@Override
+			public void onClick(View arg0) {
+ 
+			    Intent intent = new Intent(context, tabellactivity.class);
+                            startActivity(intent);   
+ 
+			}
+ 
+		});
+ 
+	}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
