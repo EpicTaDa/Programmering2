@@ -7,5 +7,9 @@
     <string name="titeln">BUSSKOLL</string>
     <string name="tabeller">Tidtabeller</string>
     <string name="spåra">Spåra bussen!</string>
+    <string name="buss1">1:an Centrum-Öster,Centrum-Väster</string>
+    <string name="buss2">2:an Centrum-Kristineberg</string>
+    <string name="buss3">3:an Centrum-Mo</string>
+    <string name="buss4">4:an Centrum-Idenor</string>
 
 </resources>
