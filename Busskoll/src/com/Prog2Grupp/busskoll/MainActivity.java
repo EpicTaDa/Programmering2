@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
 	Button button;
+	Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -28,6 +29,7 @@ public class MainActivity extends Activity {
 		final Context context = this;
  
 		button = (Button) findViewById(R.id.button1);
+		button2= (Button) findViewById(R.id.button2);
  
 		button.setOnClickListener(new OnClickListener() {
  
@@ -38,9 +40,22 @@ public class MainActivity extends Activity {
                             startActivity(intent);   
  
 			}
+			
  
 		});
+		button2.setOnClickListener(new OnClickListener() {
+			 
+			@Override
+			public void onClick(View arg0) {
  
+			    Intent intent2 = new Intent(context, trackabuss.class);
+                            startActivity(intent2);   
+ 
+			}
+			
+ 
+		});
+		 
 	}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
